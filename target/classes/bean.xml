@@ -4,6 +4,6 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="accountService" class="service.accountServiceImpl"></bean>
-    <bean id="factory" class="service.beanFactory"></bean>
+    <bean id="factory" class="service.beanFactory" ></bean>
     <bean id="factoryAccountService" factory-bean="factory" factory-method="createAccountService2"></bean>
 </beans>

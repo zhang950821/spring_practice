@@ -2,8 +2,12 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-
+<!--account-->
     <bean id="accountService" class="service.accountServiceImpl"></bean>
     <bean id="factory" class="service.beanFactory" ></bean>
-    <bean id="factoryAccountService" factory-bean="factory" factory-method="createAccountService2"></bean>
+    <bean id="factoryAccountService" factory-bean="factory" factory-method="createAccountService"></bean>
+
+<!--login-->
+    <bean id="loginAction" class="action.loginAction"></bean>
+    <bean id="loginService" class="service.loginService"></bean>
 </beans>
